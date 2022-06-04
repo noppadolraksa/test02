@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": "."
+    // "paths": {
+    //   "@/components/*": ["components/*"],
+    //   "@/sass/*": ["public/static/sass/*"],
+    //   //   "@/hook/*": ["hook/*"],
+    //   "@/global/*": ["public/static/*"],
+    //   "@/layout/*": ["layout/*"],
+    //   //   "@/locales/*": ["locales/*"],
+    //   //   "@/context/*": ["context/*"],
+    //   "@/services/*": ["services/*"]
+    // }
+  }
+}

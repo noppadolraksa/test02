@@ -1,0 +1,172 @@
+.form-container {
+  background-color: #292929;
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  padding-top: 50px;
+  align-items: flex-start;
+  justify-content: center;
+}
+.form-wrapper {
+  display: flex;
+  min-width: 300px;
+  width: 70%;
+  border: 1px solid #e3e3e3;
+  align-items: center;
+  background-color: #f2f2f2;
+  padding: 12px;
+  border-radius: 12px;
+  justify-content: center;
+  flex-direction: column;
+  .form-title {
+    font-size: 22px;
+  }
+
+  .form-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 250px;
+    width: 100%;
+    padding: 20px;
+  }
+  .form-input-container {
+  }
+  .form-input {
+    display: flex;
+    flex-direction: column;
+  }
+  //remove input focus border
+  :focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+    outline-color: -webkit-focus-ring-color;
+    outline-style: auto;
+    outline-width: 0px;
+  }
+  .form-message {
+    font-size: 16px;
+    padding: 0;
+  }
+  .upload {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+  .group-zone {
+    label {
+      height: 150px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 12px;
+      border: 1px solid #e0e0e0;
+      flex-direction: column;
+    }
+  }
+  label.form-error {
+    color: red;
+    position: relative;
+    background-color: inherit;
+  }
+  .form-input-checkbox {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+
+    .checkbox {
+    }
+    .checkbox-title {
+      font-size: 16px;
+      text-align: center;
+    }
+  }
+
+  .input-border {
+    border: 1px solid #e0e0e0;
+    height: 50px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    padding: 0 20px;
+    box-shadow: unset;
+
+    &.error {
+      border-color: red;
+    }
+  }
+
+  .btn-submit {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #e3e3e3;
+    font-size: 14px;
+  }
+  .btn-blue {
+    background-color: #daeeff;
+  }
+  .btn-gray {
+    background-color: #ccc;
+  }
+  .checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #eee;
+  }
+  .form-input-checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+
+  /* Hide the browser's default checkbox */
+
+  /* When the checkbox is checked, add a blue background */
+  .form-input-checkbox input:checked ~ .checkmark {
+    background-color: #2196f3;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .form-input-checkbox input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .form-input-checkbox .checkmark:after {
+    left: 5px;
+    top: 2px;
+    width: 5px;
+    height: 9px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .form-input-radio {
+    margin: 0;
+    .form-radio {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .radio {
+      }
+    }
+  }
+  // .error {
+  //   color: red;
+  // }
+}
