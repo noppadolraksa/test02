@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from '../styles/Home.module.scss';
 import Pages from '../layout/pageMain';
 
 export default function Home(props) {
@@ -17,7 +16,7 @@ export default function Home(props) {
       titleName={'หน้าหลัก'}
     >
       <div>
-        <h1>Hello Nextjs</h1>
+        <h1>Welcome To Next.js</h1>
       </div>
     </Pages>
   );
