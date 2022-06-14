@@ -62,7 +62,7 @@ const Terrabit = () => {
     const masterRegEx = /^55[0-9]{14}$/;
     const amexRegEx = /^3[47][0-9]{13}$/;
 
-    if (state[1].toString() === '-1') {
+    if (state[1] != undefined && state[1].toString() === '-1') {
       router.push('/');
     } else if (visaRegEx.test(state[1])) {
       setAnswer((nextState) => ({
