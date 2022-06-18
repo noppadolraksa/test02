@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-export default function Home(props) {
+
+const Test02 = () => {
   const [dataRaw, setDataRaw] = useState({});
   const [data, setData] = useState({});
   const [inputValue, setInputValue] = useState();
@@ -23,10 +24,9 @@ export default function Home(props) {
     });
     setData({ count: q.categories.length, ...q });
   };
-  console.log(data);
+
   return (
     <div className="test02-container">
-      <h1>Test02</h1>
       <form
         onSubmit={(e) => {
           handleInput(e);
@@ -61,4 +61,6 @@ export default function Home(props) {
       </div>
     </div>
   );
-}
+};
+
+export default Test02;
